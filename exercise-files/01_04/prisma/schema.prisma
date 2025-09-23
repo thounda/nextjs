@@ -1,0 +1,24 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://prisly.d/accelerate-init
+
+// Define database connection via the PRISMA_DATABASE_URL env var
+datasource db {
+provider = "postgresql"
+url      = env("PRISMA_DATABASE_URL")
+}
+
+// Define custom output path for generated Prisma Client
+generator client {
+provider = "prisma-client-js"
+}
+
+model Post {
+id        String   @id @default(uuid())
+title     String
+content   String?
+date      String?
+user      String?
+}
