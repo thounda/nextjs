@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "seed": "node -r dotenv/config prisma/seed.js",
-    "install": "npm install"
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "node -r dotenv/config prisma/seed.js"
