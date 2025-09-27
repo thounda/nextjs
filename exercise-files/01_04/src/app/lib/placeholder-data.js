@@ -5,7 +5,7 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do ei",
     date: "276761",
-    user: "Sandra B",
+    author: "Sandra B",
   },
   {
     id: "6bd38af3-8a95-4a7a-add7-fd69c6b8f124",
@@ -13,14 +13,14 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     date: "911166",
-    user: "Sandra B",
+    author: "Sandra B",
   },
   {
     id: "836b0611-e82e-4b5e-8ab9-8e9f98e43549",
     title: "Post Title 3",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     date: "393288",
-    user: "Sandy L",
+    author: "Sandy L",
   },
   {
     id: "b08212a4-fd01-4d39-892c-15d49b8a96a4",
@@ -28,7 +28,7 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut ",
     date: "1047019",
-    user: "Jane S",
+    author: "Jane S",
   },
   {
     id: "bd0f47c5-3cd0-48ee-9b52-104a914e2354",
@@ -36,7 +36,7 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     date: "544869",
-    user: "Jane S",
+    author: "Jane S",
   },
   {
     id: "e7c26aa0-76f7-4037-b341-4a794c9c8f64",
@@ -44,7 +44,7 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliq",
     date: "642458",
-    user: "Sandra B",
+    author: "Sandra B",
   },
   {
     id: "2375388b-3b07-401b-9f70-fd69b4ef5ead",
@@ -52,7 +52,7 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     date: "304066",
-    user: "Jane S",
+    author: "Jane S",
   },
   {
     id: "b1a5ffb6-1152-4a9f-a997-9f4e66e140af",
@@ -60,7 +60,7 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusm",
     date: "1005474",
-    user: "John D",
+    author: "John D",
   },
   {
     id: "7f9622bb-eb4d-4f42-b66a-7dfa28f5e32a",
@@ -68,7 +68,7 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore e",
     date: "113002",
-    user: "John D",
+    author: "John D",
   },
   {
     id: "724688be-3911-4bf7-8717-4ac8931daf8c",
@@ -76,8 +76,8 @@ const posts = [
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     date: "632982",
-    user: "Sandy L",
-  }
+    author: "Sandy L",
+  },
 ];
 
 module.exports = {

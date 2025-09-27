@@ -20,5 +20,5 @@ id        String   @id @default(uuid())
 title     String
 content   String?
 date      String?
-user      String?
+author      String?
 }
