@@ -1,4 +1,6 @@
+// src/app/lib/data.ts
 import { PrismaClient } from "@prisma/client";
+import { unstable_noStore } from "next/cache"; // Import the function
 
 // Instantiate a single PrismaClient instance to avoid multiple connections in development
 // and for efficient use of serverless functions.
@@ -6,6 +8,9 @@ const prisma = new PrismaClient();
 
 // This is an async function that fetches all posts from the database.
 export async function getPosts() {
+  // 1. Opt-out of Next.js Data Cache
+  unstable_noStore();
+
   try {
     const posts = await prisma.post.findMany();
     // Return an object with the posts array.
@@ -19,6 +24,9 @@ export async function getPosts() {
 
 // This is a new function to fetch a single post by its ID.
 export async function getPostById(id: string) {
+  // 2. Opt-out of Next.js Data Cache
+  unstable_noStore();
+
   try {
     const post = await prisma.post.findUnique({
       where: { id: id },
