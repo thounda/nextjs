@@ -13,6 +13,26 @@ export async function getPosts() {
   unstable_noStore();
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
+  //     try {
+  //     // === START OF TEMPORARY TEST CODE ===
+  //     // Force a runtime error to trigger error.tsx
+  //     throw new Error("Forced Data Fetching Failure for Error.tsx Test");
+  //     // === END OF TEMPORARY TEST CODE ===
+
+  //     // The code below will not run during the test
+  //     const posts = await prisma.post.findMany();
+  //     return { posts };
+  //   } catch (error) {
+  //     // IMPORTANT: When an error is thrown in a Server Component,
+  //     // it MUST be re-thrown from the boundary function to be caught by error.tsx.
+  //     console.error("Database Error:", error);
+
+  //     // We re-throw the error so Next.js catches it and displays error.tsx
+  //     throw error;
+  //   }
+  // }
+
+  // This is Production Try block - the error block above - comment this one out if testing error
   try {
     const posts = await prisma.post.findMany();
     // Return an object with the posts array.
